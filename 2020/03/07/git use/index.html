@@ -6,14 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2020/2 | UDLD</title>
+  <title>git use | UDLD</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="UDLD">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;archives&#x2F;2020&#x2F;02&#x2F;index.html">
+  <meta name="description" content="1.pull code git clone $repo_url  or update code cloned  set git command alias（disposable）：git config --global alias.up &amp;#39;pull --rebase --autostash&amp;#39;  update codee：git up   2.create local feature">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git use">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;03&#x2F;07&#x2F;git%20use&#x2F;index.html">
 <meta property="og:site_name" content="UDLD">
+<meta property="og:description" content="1.pull code git clone $repo_url  or update code cloned  set git command alias（disposable）：git config --global alias.up &amp;#39;pull --rebase --autostash&amp;#39;  update codee：git up   2.create local feature">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.img.wenhairu.com&#x2F;images&#x2F;2020&#x2F;03&#x2F;07&#x2F;mMzit.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.img.wenhairu.com&#x2F;images&#x2F;2020&#x2F;03&#x2F;07&#x2F;mMLNS.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.img.wenhairu.com&#x2F;images&#x2F;2020&#x2F;03&#x2F;07&#x2F;mMhyC.png">
+<meta property="og:updated_time" content="2020-03-07T11:31:40.693Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;cdn.img.wenhairu.com&#x2F;images&#x2F;2020&#x2F;03&#x2F;07&#x2F;mMzit.png">
   
     <link rel="alternative" href="/atom.xml" title="UDLD" type="application/atom+xml">
   
@@ -149,49 +156,234 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-git use" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/02/10/git%20use/" class="archive-article-date">
-  	<time datetime="2020-02-09T16:00:24.089Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-10</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/10/git%20use/">git use</a>
+    <h1 class="article-title" itemprop="name">
+      git use
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
+        
+        <a href="/2020/03/07/git%20use/" class="archive-article-date">
+  	<time datetime="2020-03-07T11:31:40.692Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-07</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id=""><a href="#" class="headerlink" title=""></a></h1><h3 id="1-pull-code"><a href="#1-pull-code" class="headerlink" title="1.pull code"></a>1.pull code</h3><ul>
+<li><code>git clone $repo_url</code></li>
+</ul>
+<p>or update code cloned</p>
+<ul>
+<li><p>set git command alias（disposable）：<code>git config --global alias.up &#39;pull --rebase --autostash&#39;</code></p>
+</li>
+<li><p>update codee：<code>git up</code></p>
+</li>
+</ul>
+<h3 id="2-create-local-feature-branch"><a href="#2-create-local-feature-branch" class="headerlink" title="2.create local feature branch"></a>2.create local feature branch</h3><ul>
+<li><p>first update code of main branch code：<code>git checkout master; git up</code></p>
+</li>
+<li><p>create new branch from main branch：<code>git checkout -b $branch_name</code></p>
+</li>
+</ul>
+<h3 id="3-modify-local-code"><a href="#3-modify-local-code" class="headerlink" title="3.modify local code"></a>3.modify local code</h3><h3 id="4-submit-local-code"><a href="#4-submit-local-code" class="headerlink" title="4.submit local code"></a>4.submit local code</h3><ul>
+<li><p>change user info（disposable）：<code>git config user.name &quot;YourName&quot;; git config user.email yourname@cryptape.com</code></p>
+</li>
+<li><p>add modified file：<code>git add $file_name</code></p>
+</li>
+<li><p>add submit message：<code>git commit -am &quot;changes&quot;</code></p>
+</li>
+<li><p>suggest use GUI tool, for example SourceTree、GitX</p>
+</li>
+</ul>
+<h3 id="5-push-local-branch-to-remote"><a href="#5-push-local-branch-to-remote" class="headerlink" title="5.push local branch to remote"></a>5.push local branch to remote</h3><ul>
+<li><p>push local branch to remote：<code>git push --set-upstream origin $branch_name</code></p>
+</li>
+<li><p>associate local branch and remote branch：<code>git branch --set-upstream-to=origin/$branch_name $branch_name</code></p>
+</li>
+</ul>
+<h3 id="6-create-a-pull-request"><a href="#6-create-a-pull-request" class="headerlink" title="6.create a pull request"></a>6.create a pull request</h3><ul>
+<li>create PR</li>
+</ul>
+<p><img src="https://cdn.img.wenhairu.com/images/2020/03/07/mMzit.png" alt=""></p>
+<ul>
+<li>check branch info，input related message</li>
+</ul>
+<p><img src="https://cdn.img.wenhairu.com/images/2020/03/07/mMLNS.png" alt=""></p>
+<h3 id="7-check-code"><a href="#7-check-code" class="headerlink" title="7.check code"></a>7.check code</h3><ul>
+<li><p>tell reviewers，please review</p>
+</li>
+<li><p>according to opinions of reviewers，modify code</p>
+</li>
+<li><p>submit modified code，depending on the situation, keep only the meaningful commit（use git revert和git push -f cover modification of PR)</p>
+</li>
+</ul>
+<h3 id="8-merge-code"><a href="#8-merge-code" class="headerlink" title="8.merge code"></a>8.merge code</h3><ul>
+<li>PR can be merged only after CI automated tests pass</li>
+</ul>
+<h3 id="9-delete-local-branch"><a href="#9-delete-local-branch" class="headerlink" title="9.delete local branch"></a>9.delete local branch</h3><ul>
+<li>git branch -d $branch_name</li>
+</ul>
+<h2 id="how-to-update-local-code"><a href="#how-to-update-local-code" class="headerlink" title="how to update local code"></a>how to update local code</h2><p>After merge the PR, look at the results of your PR page. When you see the prompt “xx commits behind develop. Sync now.”, It means that your branch has not merged the latest updates. You should use git rebase to update your changes. Branching to avoid code obsolescence and code conflicts. Proceed as follows:<br>1.update local code base</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. `git checkout master` </span><br><span class="line">2. `git up`</span><br><span class="line">3. you can see fast point</span><br></pre></td></tr></table></figure>
 
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">First, rewinding head to replay your work on top of it...</span><br><span class="line">Fast-forwarded master to xxxx.</span><br></pre></td></tr></table></figure>
+
+<p>2.update local branch（use rebase，keep your commits in your branch coherent and clear）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1. `git checkout master`</span><br><span class="line">2. `git rebase origin/master my_local_branch`</span><br><span class="line">3. `git checkout my_local_branch`</span><br><span class="line">4. `git push -f`</span><br></pre></td></tr></table></figure>
+
+<h3 id="how-to-roll-back-a-local-commit："><a href="#how-to-roll-back-a-local-commit：" class="headerlink" title="how to roll back a local commit："></a>how to roll back a local commit：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># Git undo last commit</span><br><span class="line">alias git-undo-last-commit=&apos;git reset --soft HEAD^&apos;</span><br></pre></td></tr></table></figure>
+
+<p>note：This step is dangerous. It will cancel the last local commit. Please pay attention to this operation.</p>
+<h3 id="how-to-modify-the-last-commit："><a href="#how-to-modify-the-last-commit：" class="headerlink" title="how to modify the last commit："></a>how to modify the last commit：</h3><p>execute git amend command in local branch（use SourceTree as an example）：</p>
+<p><img src="https://cdn.img.wenhairu.com/images/2020/03/07/mMhyC.png" alt=""></p>
+<h3 id="how-to-checkout-a-remote-branch-to-local："><a href="#how-to-checkout-a-remote-branch-to-local：" class="headerlink" title="how to checkout a remote branch to local："></a>how to checkout a remote branch to local：</h3><p><code>git checkout -b $branch_name origin/$branch_name;</code></p>
+<h3 id="how-to-undo-local-changes-and-overwrite-PR-branch-content："><a href="#how-to-undo-local-changes-and-overwrite-PR-branch-content：" class="headerlink" title="how to undo local changes and overwrite PR branch content："></a>how to undo local changes and overwrite PR branch content：</h3><ol>
+<li>git re<em>set –soft HEAD^</em></li>
+<li>git commit local-modification</li>
+<li>git push -f force to overwrite remote feature branch, keep consistent with local（Remember, the push operation is used to synchronize your local and remote. When your local content is not ready, there is no need to sync remote content）</li>
+</ol>
+<h3 id="how-to-do-conflict-resolution"><a href="#how-to-do-conflict-resolution" class="headerlink" title="how to do conflict resolution"></a>how to do conflict resolution</h3><ol>
+<li>strongly recommend using opendiff for comparison</li>
+</ol>
+<p><code>git config --global merge.tool opendiff</code></p>
+<ol start="2">
+<li>resolve conflict：</li>
+</ol>
+<p><code>git mergetool # will automatically use opendiff to compare the remote and local, after confirming the changes, use cmd + q to quit editing</code></p>
+<hr>
+<h2 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2><ul>
+<li><p>refer <a href="http://www.ruanyifeng.com/blog/2015/12/git-workflow.html" target="_blank" rel="noopener"><strong>GitHub Flow guide</strong></a></p>
+</li>
+<li><p>master branch is required to be deployable, so PRs that fail CI tests cannot be merged</p>
+</li>
+<li><p>branch names need to be concise, clear and understandable</p>
+</li>
+<li><p>code submission description information, PR description information, both need to be written in English</p>
+</li>
+<li><p><code>**git push -f**</code>** It is a dangerous operation. This operation is not allowed on the main branch (such as master, develop). Only the feature branch that is not merged into the main branch is allowed.**</p>
+</li>
+<li><p>master branch must be added to protected branches to avoid misoperation by novices</p>
+</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" target="_blank" rel="noopener" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" target="_blank" rel="noopener" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/03/07/git%20use/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2020/03/07/Aion%20VM%20Research/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Aion VM Research
+        
+      </div>
+    </a>
   
   
-    </div></section>
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -215,8 +407,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

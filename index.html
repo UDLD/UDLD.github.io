@@ -164,7 +164,7 @@
 
         
         <a href="/2020/03/07/Solidity%20contract-version-control%20demo/" class="archive-article-date">
-  	<time datetime="2020-03-07T10:28:30.596Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-07</time>
+  	<time datetime="2020-03-07T11:34:32.977Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-07</time>
 </a>
         
       </header>
@@ -197,9 +197,7 @@
 <li><p>Use map to record betwcontract_info_evidence_address and version_contract_address_map.</p>
 </li>
 </ul>
-<p><img src="https://tcs.teambition.net/storage/111r1452d93e73b186835c79a077efa74e67?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9hcHBJZCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9vcmdhbml6YXRpb25JZCI6IjVkMTYwNjk5ZmJmN2NhMDAwMTI0NWYzOCIsImV4cCI6MTU4NDE3OTc1NCwiaWF0IjoxNTgzNTc0OTU0LCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzExMXIxNDUyZDkzZTczYjE4NjgzNWM3OWEwNzdlZmE3NGU2NyJ9.EIyRYuovZFHV1ilojB4Zh8OaKyTc4B7RotaJV2e88gU&download=image.png" alt=""></p>
-<br/>
-
+<p><img src="https://cdn.img.wenhairu.com/images/2020/03/07/mMTiH.png" alt=""><br><br/></p>
 <h2 id="Code"><a href="#Code" class="headerlink" title="Code:"></a>Code:</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br></pre></td><td class="code"><pre><span class="line">pragma solidity ^0.4.24;</span><br><span class="line"></span><br><span class="line">contract ControlVersion &#123;</span><br><span class="line"></span><br><span class="line">    struct AddressMap</span><br><span class="line">    &#123;</span><br><span class="line">        mapping(address =&gt; IndexValue[]) data;</span><br><span class="line">        KeyFlag[] keys;</span><br><span class="line">        uint size;</span><br><span class="line">    &#125;</span><br><span class="line">    struct IndexValue &#123; uint key; address value; &#125; // key represent version</span><br><span class="line">    struct KeyFlag &#123; address key; bool deleted; &#125;</span><br><span class="line">  </span><br><span class="line">   AddressMap address_map;</span><br><span class="line">   </span><br><span class="line">    constructor() public</span><br><span class="line">    &#123;</span><br><span class="line">        address_map.size = 0;</span><br><span class="line">    &#125;</span><br><span class="line">  </span><br><span class="line">    function contains_key(address key) public view returns (bool containsed)</span><br><span class="line">    &#123;</span><br><span class="line">        if(address_map.data[key].length &gt; 0)&#123;</span><br><span class="line">            return true;</span><br><span class="line">        &#125;</span><br><span class="line">        return false;</span><br><span class="line">    &#125;</span><br><span class="line">  </span><br><span class="line">    function getIndex(address key, uint version) public view returns (int id)</span><br><span class="line">    &#123;</span><br><span class="line">        bool key_exist = contains_key(key);</span><br><span class="line">        if(key_exist)&#123;</span><br><span class="line">            IndexValue[] memory indexValues = address_map.data[key];</span><br><span class="line">            for(uint j = 0;j&lt;indexValues.length;j++)&#123;</span><br><span class="line">                if(indexValues[j].key == version)&#123;</span><br><span class="line">                   return int(j);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            return -1;</span><br><span class="line">        &#125;</span><br><span class="line">        return -2;</span><br><span class="line">    &#125;</span><br><span class="line">  </span><br><span class="line">    function add_address(address key, uint version, address value) public returns (bool replaced)</span><br><span class="line">    &#123;</span><br><span class="line">        int index = getIndex(key,version);</span><br><span class="line">        </span><br><span class="line">        // init IndexValues</span><br><span class="line">        IndexValue indexValue;</span><br><span class="line">        indexValue.key = version;</span><br><span class="line">        indexValue.value = value;</span><br><span class="line">        </span><br><span class="line">        if(index == -2)&#123;</span><br><span class="line">            </span><br><span class="line">            // init KeyFlag</span><br><span class="line">            KeyFlag memory keyFlag;</span><br><span class="line">            keyFlag.key = key;</span><br><span class="line">            keyFlag.deleted = false;</span><br><span class="line">            </span><br><span class="line">            // init IndexValues</span><br><span class="line">            IndexValue[] indexValuesTmp;</span><br><span class="line">            indexValuesTmp[0]=indexValue;</span><br><span class="line">            </span><br><span class="line">            // init data</span><br><span class="line">            address_map.data[key] = indexValuesTmp;</span><br><span class="line">            address_map.keys[address_map.size] = keyFlag;</span><br><span class="line">            address_map.size++;</span><br><span class="line">            </span><br><span class="line">            return false;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        if(index == -1)&#123;</span><br><span class="line">            address_map.data[key].push(indexValue);</span><br><span class="line">            return false;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            address_map.data[key][uint(index)].value = value;</span><br><span class="line">            return true;</span><br><span class="line">        &#125;</span><br><span class="line">        return false;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    function remove_address(address key) public returns (bool removed)</span><br><span class="line">    &#123;</span><br><span class="line"></span><br><span class="line">        for(uint i = 0;i&lt;address_map.keys.length;i++)&#123;</span><br><span class="line">            address key_tmp =  address_map.keys[i].key;</span><br><span class="line">            if(key_tmp == key)&#123;</span><br><span class="line">               delete address_map.data[key];</span><br><span class="line">               address_map.keys[i].deleted = true;</span><br><span class="line">               return true;</span><br><span class="line">           &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return false;</span><br><span class="line">    &#125;</span><br><span class="line">  </span><br><span class="line">    function contains_key_index(address key, uint version) public view returns (bool success)</span><br><span class="line">    &#123;</span><br><span class="line">        int id = getIndex(key, version);</span><br><span class="line">        if(id&gt;=0)&#123;</span><br><span class="line">            return true;</span><br><span class="line">        &#125;</span><br><span class="line">        return false;</span><br><span class="line">    &#125;</span><br><span class="line">  </span><br><span class="line">    function get_address_list(address key) public view returns (address[] addr)</span><br><span class="line">    &#123;</span><br><span class="line">      </span><br><span class="line">        bool key_exist = contains_key(key);</span><br><span class="line">        address[] addr_list;</span><br><span class="line">        if(key_exist)&#123;</span><br><span class="line">            for(uint i=0; i&lt;address_map.data[key].length; i++)&#123;</span><br><span class="line">                addr_list[i] = address_map.data[key][i].value;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return addr_list;</span><br><span class="line">    &#125;</span><br><span class="line">  </span><br><span class="line">    function get_address(address key, uint version) public view returns (address addr)</span><br><span class="line">    &#123;</span><br><span class="line">        int id = getIndex(key, version);</span><br><span class="line">        if(id&gt;=0)&#123;</span><br><span class="line">            return address_map.data[key][uint(id)].value;</span><br><span class="line">        &#125;</span><br><span class="line">        return address(0);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
@@ -244,6 +242,104 @@
 
 
   
+    <article id="post-Aion VM Research" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/07/Aion%20VM%20Research/">Aion VM Research</a>
+    </h1>
+  
+
+        
+        <a href="/2020/03/07/Aion%20VM%20Research/" class="archive-article-date">
+  	<time datetime="2020-03-07T11:34:14.455Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-07</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="AVM-Github"><a href="#AVM-Github" class="headerlink" title="AVM Github"></a>AVM Github</h2><p><a href="https://github.com/aionnetwork/AVM" target="_blank" rel="noopener"><strong>https://github.com/aionnetwork/AVM</strong></a></p>
+<h2 id="Active-Level"><a href="#Active-Level" class="headerlink" title="Active Level"></a>Active Level</h2><p><strong>Aion regards AVM as the main virtual machine of its future public chain</strong></p>
+<p><img src="https://cdn.img.wenhairu.com/images/2020/03/07/mMenX.png" alt=""></p>
+<h2 id="AVM-Architecture"><a href="#AVM-Architecture" class="headerlink" title="AVM Architecture"></a>AVM Architecture</h2><p>AVM is not a modification or rewrite of the underlying JVM, but a bytecode transformer and runtime library, which provides control over how developers are allowed to interact with the AVM.</p>
+<p><img src="https://cdn.img.wenhairu.com/images/2020/03/07/mMBVp.png" alt=""></p>
+<h2 id="Hybrid-Storage"><a href="#Hybrid-Storage" class="headerlink" title="Hybrid Storage"></a><strong>Hybrid Storage</strong></h2><h3 id="Object-Graphs"><a href="#Object-Graphs" class="headerlink" title="Object Graphs"></a><strong>Object Graphs</strong></h3><ul>
+<li><p>walk all class statics, adding each object found to a set of discovered objects and, if not already in that set, to a work queue</p>
+</li>
+<li><p>remove an object from the queue, scan it, adding each object found to the discovered set and, if not already in that set, to the queue</p>
+</li>
+<li><p>continue reading the queue until it is empty</p>
+</li>
+</ul>
+<p><img src="https://cdn.img.wenhairu.com/images/2020/03/07/mMd66.png" alt=""></p>
+<h3 id="Manual-Storage"><a href="#Manual-Storage" class="headerlink" title="Manual Storage"></a><strong>Manual Storage</strong></h3><ul>
+<li><p>However, for bulk storage of data which requires off-chain verification, we also expose an API for manually interacting with a key-value store.</p>
+</li>
+<li><p>For the developer, this means taking advantage of the graph for application state and decision-making, while also leveraging the key-value store for large or per-user data. This also means applications which only have a very small size may have no need for the key-value store at all, as they rely entirely on the automatic management of the graph.</p>
+</li>
+</ul>
+<p><img src="https://cdn.img.wenhairu.com/images/2020/03/07/mMiuI.png" alt=""></p>
+<h3 id="Consensus-Hash"><a href="#Consensus-Hash" class="headerlink" title="Consensus Hash"></a><strong>Consensus Hash</strong></h3><p>The difference is that we also hash the serialized object graph and combine that hash with the root hash of the trie in order to develop our <strong>hybrid storage root hash</strong>. This is the storage hash used in consensus.</p>
+<p>This means that a Merkle proof cannot apply to objects in the graph, but can still be used to prove the state of the key-value store.</p>
+<p><img src="https://cdn.img.wenhairu.com/images/2020/03/07/mM2zh.png" alt=""></p>
+<h2 id="Transaction-Billing"><a href="#Transaction-Billing" class="headerlink" title="Transaction Billing"></a><strong>Transaction Billing</strong></h2><p>This means that we <strong>always run with transparent object graph persistence</strong>, but we always operate on the entire graph at once. As a result there is no special question of how to collect orphaned data from the storage. We keep this small by billing for the read/write of the graph on every transaction. If the graph is small, this is far cheaper and faster than issuing several small reads and writes for each transaction (instead, just issuing one larger one for the entire graph).</p>
+<h3 id="JCL-Whitelist"><a href="#JCL-Whitelist" class="headerlink" title="JCL Whitelist"></a>JCL Whitelist</h3><p><a href="https://developer.theoan.com/docs/custom-kits/fundamentals/aion-virtual-machine/jcl-whitelist" target="_blank" rel="noopener"><strong>https://developer.theoan.com/docs/custom-kits/fundamentals/aion-virtual-machine/jcl-whitelist</strong></a></p>
+<p><img src="https://cdn.img.wenhairu.com/images/2020/03/07/mMsZu.png" alt=""></p>
+<h3 id="API"><a href="#API" class="headerlink" title="API"></a>API</h3><p><img src="https://cdn.img.wenhairu.com/images/2020/03/07/mMXNq.png" alt=""></p>
+<h3 id="Contract-Write"><a href="#Contract-Write" class="headerlink" title="Contract Write"></a>Contract Write</h3><ul>
+<li><p>It support off-chain contract debug</p>
+</li>
+<li><p>It support third-party tools of java</p>
+</li>
+</ul>
+<h1 id="A-high-level-analysis-comparing-the-EVM-WASM-and-the-JVM"><a href="#A-high-level-analysis-comparing-the-EVM-WASM-and-the-JVM" class="headerlink" title="A high-level analysis comparing the EVM, WASM and the JVM"></a><strong>A high-level analysis comparing the EVM, WASM and the JVM</strong></h1><p><img src="https://cdn.img.wenhairu.com/images/2020/03/07/mMt7D.png" alt=""></p>
+<h3 id="Java-ecology"><a href="#Java-ecology" class="headerlink" title="Java ecology"></a>Java ecology</h3><p><img src="https://cdn.img.wenhairu.com/images/2020/03/07/mMrKP.png" alt=""></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/03/07/Aion%20VM%20Research/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-git use" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -251,13 +347,13 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/10/git%20use/">git use</a>
+      <a class="article-title" href="/2020/03/07/git%20use/">git use</a>
     </h1>
   
 
         
-        <a href="/2020/02/10/git%20use/" class="archive-article-date">
-  	<time datetime="2020-02-09T16:00:24.089Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-10</time>
+        <a href="/2020/03/07/git%20use/" class="archive-article-date">
+  	<time datetime="2020-03-07T11:31:40.692Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-07</time>
 </a>
         
       </header>
@@ -299,11 +395,11 @@
 <h3 id="6-create-a-pull-request"><a href="#6-create-a-pull-request" class="headerlink" title="6.create a pull request"></a>6.create a pull request</h3><ul>
 <li>create PR</li>
 </ul>
-<p><img src="https://tcs-ga.teambition.net/storage/111k98599b9a132e5536181e968cd871afdb?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9hcHBJZCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTU4MTg2MzQwNywiaWF0IjoxNTgxMjU4NjA3LCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzExMWs5ODU5OWI5YTEzMmU1NTM2MTgxZTk2OGNkODcxYWZkYiJ9.REKBkwuSKeD_db06tFTbQYxRbxZWPGwVR1KRIOKNt4E&download=image.png" alt=""></p>
+<p><img src="https://cdn.img.wenhairu.com/images/2020/03/07/mMzit.png" alt=""></p>
 <ul>
 <li>check branch info，input related message</li>
 </ul>
-<p><img src="https://tcs-ga.teambition.net/storage/111k0df5c81a2e123424041f282e86f02cbc?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9hcHBJZCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTU4MTg2MzQwNywiaWF0IjoxNTgxMjU4NjA3LCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzExMWswZGY1YzgxYTJlMTIzNDI0MDQxZjI4MmU4NmYwMmNiYyJ9.D2UXcdlUpn51cGU-q2sQcLQ0WnOVTPZl-8swxux9FDs&download=image%20(1).png" alt=""></p>
+<p><img src="https://cdn.img.wenhairu.com/images/2020/03/07/mMLNS.png" alt=""></p>
 <h3 id="7-check-code"><a href="#7-check-code" class="headerlink" title="7.check code"></a>7.check code</h3><ul>
 <li><p>tell reviewers，please review</p>
 </li>
@@ -318,8 +414,7 @@
 <h3 id="9-delete-local-branch"><a href="#9-delete-local-branch" class="headerlink" title="9.delete local branch"></a>9.delete local branch</h3><ul>
 <li>git branch -d $branch_name</li>
 </ul>
-<h2 id="how-to-update-local-code"><a href="#how-to-update-local-code" class="headerlink" title="how to update local code"></a>how to update local code</h2><p><img src="https://tcs-ga.teambition.net/storage/111k13dfbbd4b1d89c4119088eaa56df0dd9?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9hcHBJZCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTU4MTg2MzQwNywiaWF0IjoxNTgxMjU4NjA3LCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzExMWsxM2RmYmJkNGIxZDg5YzQxMTkwODhlYWE1NmRmMGRkOSJ9.MiVdib6o2M6tNBqkNzFBDfIaJhK2On3x7sKG5aG8cLE&download=Screen%20Shot%202018-11-19%20at%202.55.14%20PM.png" alt=""></p>
-<p>After merge the PR, look at the results of your PR page. When you see the prompt “xx commits behind develop. Sync now.”, It means that your branch has not merged the latest updates. You should use git rebase to update your changes. Branching to avoid code obsolescence and code conflicts. Proceed as follows:<br>1.update local code base</p>
+<h2 id="how-to-update-local-code"><a href="#how-to-update-local-code" class="headerlink" title="how to update local code"></a>how to update local code</h2><p>After merge the PR, look at the results of your PR page. When you see the prompt “xx commits behind develop. Sync now.”, It means that your branch has not merged the latest updates. You should use git rebase to update your changes. Branching to avoid code obsolescence and code conflicts. Proceed as follows:<br>1.update local code base</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. `git checkout master` </span><br><span class="line">2. `git up`</span><br><span class="line">3. you can see fast point</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">First, rewinding head to replay your work on top of it...</span><br><span class="line">Fast-forwarded master to xxxx.</span><br></pre></td></tr></table></figure>
@@ -331,7 +426,7 @@
 
 <p>note：This step is dangerous. It will cancel the last local commit. Please pay attention to this operation.</p>
 <h3 id="how-to-modify-the-last-commit："><a href="#how-to-modify-the-last-commit：" class="headerlink" title="how to modify the last commit："></a>how to modify the last commit：</h3><p>execute git amend command in local branch（use SourceTree as an example）：</p>
-<p><img src="https://tcs-ga.teambition.net/storage/111kf735d8aee7bb37df60e8231896a24857?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9hcHBJZCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTU4MTg2MzQwNywiaWF0IjoxNTgxMjU4NjA3LCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzExMWtmNzM1ZDhhZWU3YmIzN2RmNjBlODIzMTg5NmEyNDg1NyJ9.ECP5KS_8Rw1dYVrRSNriZEapGSgGl2rv0GVEUYDKe8A&download=git%20amend%20using%20SourceTree.png" alt=""></p>
+<p><img src="https://cdn.img.wenhairu.com/images/2020/03/07/mMhyC.png" alt=""></p>
 <h3 id="how-to-checkout-a-remote-branch-to-local："><a href="#how-to-checkout-a-remote-branch-to-local：" class="headerlink" title="how to checkout a remote branch to local："></a>how to checkout a remote branch to local：</h3><p><code>git checkout -b $branch_name origin/$branch_name;</code></p>
 <h3 id="how-to-undo-local-changes-and-overwrite-PR-branch-content："><a href="#how-to-undo-local-changes-and-overwrite-PR-branch-content：" class="headerlink" title="how to undo local changes and overwrite PR branch content："></a>how to undo local changes and overwrite PR branch content：</h3><ol>
 <li>git re<em>set –soft HEAD^</em></li>
@@ -348,7 +443,7 @@
 <p><code>git mergetool # will automatically use opendiff to compare the remote and local, after confirming the changes, use cmd + q to quit editing</code></p>
 <hr>
 <h2 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2><ul>
-<li><p>refer <a href="https://thoughts.teambition.com/workspaces/5d19954f9dcfea0001cd171b/docs/5d4d1a17a8c30400011de757" target="_blank" rel="noopener"><strong>GitHub Flow guide</strong></a></p>
+<li><p>refer <a href="http://www.ruanyifeng.com/blog/2015/12/git-workflow.html" target="_blank" rel="noopener"><strong>GitHub Flow guide</strong></a></p>
 </li>
 <li><p>master branch is required to be deployable, so PRs that fail CI tests cannot be merged</p>
 </li>
@@ -373,104 +468,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/02/10/git%20use/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Aion VM Research" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/12/20/Aion%20VM%20Research/">Aion VM Research</a>
-    </h1>
-  
-
-        
-        <a href="/2019/12/20/Aion%20VM%20Research/" class="archive-article-date">
-  	<time datetime="2019-12-20T07:40:07.152Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-20</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="AVM-Github"><a href="#AVM-Github" class="headerlink" title="AVM Github"></a>AVM Github</h2><p><a href="https://github.com/aionnetwork/AVM" target="_blank" rel="noopener"><strong>https://github.com/aionnetwork/AVM</strong></a></p>
-<h2 id="Active-Level"><a href="#Active-Level" class="headerlink" title="Active Level"></a>Active Level</h2><p><strong>Aion regards AVM as the main virtual machine of its future public chain</strong></p>
-<p><img src="https://tcs-ga.teambition.net/storage/111o66a88599230cc0ce5cd23eb327517028?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9hcHBJZCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTU3NzQzMjM1MywiaWF0IjoxNTc2ODI3NTUzLCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzExMW82NmE4ODU5OTIzMGNjMGNlNWNkMjNlYjMyNzUxNzAyOCJ9.9uQr8qKP2WLVp1zoDs0zpSEgKBzh0dwV-5l6J7UHQ34&download=Screen%20Shot%202019-12-19%20at%204.46.28%20PM.png" alt=""></p>
-<h2 id="AVM-Architecture"><a href="#AVM-Architecture" class="headerlink" title="AVM Architecture"></a>AVM Architecture</h2><p>AVM is not a modification or rewrite of the underlying JVM, but a bytecode transformer and runtime library, which provides control over how developers are allowed to interact with the AVM.</p>
-<p><img src="https://tcs-ga.teambition.net/storage/111o955650422ed942dfbd05b4b5b24e0765?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9hcHBJZCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTU3NzQzMjM1MywiaWF0IjoxNTc2ODI3NTUzLCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzExMW85NTU2NTA0MjJlZDk0MmRmYmQwNWI0YjViMjRlMDc2NSJ9.BEee56ek1kjd1evdCYG0zkirieMEfh4FsY8M40m9Swg&download=image.png" alt=""></p>
-<h2 id="Hybrid-Storage"><a href="#Hybrid-Storage" class="headerlink" title="Hybrid Storage"></a><strong>Hybrid Storage</strong></h2><h3 id="Object-Graphs"><a href="#Object-Graphs" class="headerlink" title="Object Graphs"></a><strong>Object Graphs</strong></h3><ul>
-<li><p>walk all class statics, adding each object found to a set of discovered objects and, if not already in that set, to a work queue</p>
-</li>
-<li><p>remove an object from the queue, scan it, adding each object found to the discovered set and, if not already in that set, to the queue</p>
-</li>
-<li><p>continue reading the queue until it is empty</p>
-</li>
-</ul>
-<p><img src="https://tcs-ga.teambition.net/storage/111odebe0b5d3de0809e001c0d7b7d33c8b6?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9hcHBJZCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTU3NzQzMjM1MywiaWF0IjoxNTc2ODI3NTUzLCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzExMW9kZWJlMGI1ZDNkZTA4MDllMDAxYzBkN2I3ZDMzYzhiNiJ9.ZVrme2vQlxn7a7Pg91p4qL_AQIiH7CZe7fQLYVwxOGI&download=image.png" alt=""></p>
-<h3 id="Manual-Storage"><a href="#Manual-Storage" class="headerlink" title="Manual Storage"></a><strong>Manual Storage</strong></h3><ul>
-<li><p>However, for bulk storage of data which requires off-chain verification, we also expose an API for manually interacting with a key-value store.</p>
-</li>
-<li><p>For the developer, this means taking advantage of the graph for application state and decision-making, while also leveraging the key-value store for large or per-user data. This also means applications which only have a very small size may have no need for the key-value store at all, as they rely entirely on the automatic management of the graph.</p>
-</li>
-</ul>
-<p><img src="https://tcs-ga.teambition.net/storage/111od8ed250ce0cc57a80ea4036d0fef86de?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9hcHBJZCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTU3NzQzMjM1MywiaWF0IjoxNTc2ODI3NTUzLCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzExMW9kOGVkMjUwY2UwY2M1N2E4MGVhNDAzNmQwZmVmODZkZSJ9.hx5qk7OQHtegG8-WV9NIwxLp2BNoVepS5DiGp3eqQjQ&download=image.png" alt=""></p>
-<h3 id="Consensus-Hash"><a href="#Consensus-Hash" class="headerlink" title="Consensus Hash"></a><strong>Consensus Hash</strong></h3><p>The difference is that we also hash the serialized object graph and combine that hash with the root hash of the trie in order to develop our <strong>hybrid storage root hash</strong>. This is the storage hash used in consensus.</p>
-<p>This means that a Merkle proof cannot apply to objects in the graph, but can still be used to prove the state of the key-value store.</p>
-<p><img src="https://tcs-ga.teambition.net/storage/111o4736748e85226021affaa6030f31b338?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9hcHBJZCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTU3NzQzMjM1MywiaWF0IjoxNTc2ODI3NTUzLCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzExMW80NzM2NzQ4ZTg1MjI2MDIxYWZmYWE2MDMwZjMxYjMzOCJ9.9mSThql9NUhFKxZzyaMhTk4NNNhn5DAib9Cj_K4IBH0&download=image.png" alt=""></p>
-<h2 id="Transaction-Billing"><a href="#Transaction-Billing" class="headerlink" title="Transaction Billing"></a><strong>Transaction Billing</strong></h2><p>This means that we <strong>always run with transparent object graph persistence</strong>, but we always operate on the entire graph at once. As a result there is no special question of how to collect orphaned data from the storage. We keep this small by billing for the read/write of the graph on every transaction. If the graph is small, this is far cheaper and faster than issuing several small reads and writes for each transaction (instead, just issuing one larger one for the entire graph).</p>
-<h3 id="JCL-Whitelist"><a href="#JCL-Whitelist" class="headerlink" title="JCL Whitelist"></a>JCL Whitelist</h3><p><a href="https://developer.theoan.com/docs/custom-kits/fundamentals/aion-virtual-machine/jcl-whitelist" target="_blank" rel="noopener"><strong>https://developer.theoan.com/docs/custom-kits/fundamentals/aion-virtual-machine/jcl-whitelist</strong></a></p>
-<p><img src="https://tcs-ga.teambition.net/storage/111o11fad7e614401fced68dc922d0d3d2b0?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9hcHBJZCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTU3NzQzMjM1MywiaWF0IjoxNTc2ODI3NTUzLCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzExMW8xMWZhZDdlNjE0NDAxZmNlZDY4ZGM5MjJkMGQzZDJiMCJ9.cDNU4uqYOa93Ylrhsyjco2up9CTcWPFrccUlyFDTXC8&download=Screen%20Shot%202019-12-19%20at%205.21.27%20PM.png" alt=""></p>
-<h3 id="API"><a href="#API" class="headerlink" title="API"></a>API</h3><p><img src="https://tcs-ga.teambition.net/storage/111o6eafe990f276063c6be5d511b1bc66fa?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9hcHBJZCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTU3NzQzMjM1MywiaWF0IjoxNTc2ODI3NTUzLCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzExMW82ZWFmZTk5MGYyNzYwNjNjNmJlNWQ1MTFiMWJjNjZmYSJ9.5xdgvZ1DRZSjfXu3qgwrVm-6hSEFl-B4nGxE-bIFPgc&download=image.png" alt=""></p>
-<h3 id="Contract-Write"><a href="#Contract-Write" class="headerlink" title="Contract Write"></a>Contract Write</h3><ul>
-<li><p>It support off-chain contract debug</p>
-</li>
-<li><p>It support third-party tools of java</p>
-</li>
-</ul>
-<h1 id="A-high-level-analysis-comparing-the-EVM-WASM-and-the-JVM"><a href="#A-high-level-analysis-comparing-the-EVM-WASM-and-the-JVM" class="headerlink" title="A high-level analysis comparing the EVM, WASM and the JVM"></a><strong>A high-level analysis comparing the EVM, WASM and the JVM</strong></h1><p><img src="https://tcs-ga.teambition.net/storage/111o10c0694a8d8c5204e9332ef505a13d08?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9hcHBJZCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTU3NzQzMjM1MywiaWF0IjoxNTc2ODI3NTUzLCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzExMW8xMGMwNjk0YThkOGM1MjA0ZTkzMzJlZjUwNWExM2QwOCJ9.sVh3pXrYROXfZN2t9fR7rDKVDDbqDj7EEheOxVfBTHY&download=image.png" alt=""></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/12/20/Aion%20VM%20Research/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/03/07/git%20use/">展开全文 >></a>
         </p>
       
 
