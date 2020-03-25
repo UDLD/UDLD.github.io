@@ -6,13 +6,16 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2020 | UDLD</title>
+  <title>Ethereum Mythril | UDLD</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="UDLD">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;archives&#x2F;2020&#x2F;index.html">
+  <meta name="description" content="Introduction:Mythril is a security analysis tool for EVM bytecode. It detects security vulnerabilities in smart contracts built for Ethereum, Hedera, Quorum, Vechain, Roostock, Tron and other EVM-comp">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ethereum Mythril">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;03&#x2F;25&#x2F;Ethereum%20Mythril&#x2F;index.html">
 <meta property="og:site_name" content="UDLD">
+<meta property="og:description" content="Introduction:Mythril is a security analysis tool for EVM bytecode. It detects security vulnerabilities in smart contracts built for Ethereum, Hedera, Quorum, Vechain, Roostock, Tron and other EVM-comp">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2020-03-25T14:07:18.384Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="UDLD" type="application/atom+xml">
@@ -149,157 +152,233 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-Ethereum Mythril" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      Ethereum Mythril
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/25/Ethereum%20Mythril/" class="archive-article-date">
+
+        
+        <a href="/2020/03/25/Ethereum%20Mythril/" class="archive-article-date">
   	<time datetime="2020-03-25T13:56:03.011Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-25</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/25/Ethereum%20Mythril/">Ethereum Mythril</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction:"></a>Introduction:</h3><p>Mythril is a security analysis tool for EVM bytecode. It detects security vulnerabilities in smart contracts built for Ethereum, Hedera, Quorum, Vechain, Roostock, Tron and other EVM-compatible blockchains. It uses symbolic execution, SMT solving and taint analysis detect a variety of security vulnerabilities. </p>
+<h3 id="Install"><a href="#Install" class="headerlink" title="Install:"></a>Install:</h3><ul>
+<li><strong>install with docker:</strong></li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> docker pull mythril/myth</span></span><br></pre></td></tr></table></figure>
 
-        <div class="article-info info-on-right">
-          
-          
+<ul>
+<li><strong>install from Pypi:</strong></li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> pip3 install mythril</span></span><br></pre></td></tr></table></figure>
 
+<h3 id="Use"><a href="#Use" class="headerlink" title="Use:"></a>Use:</h3><ul>
+<li><strong>Command：</strong></li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> myth analyze &lt;solidity-file&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>More Use:</strong><br><a href="https://mythril-classic.readthedocs.io/en/master/index.html" target="_blank" rel="noopener">https://mythril-classic.readthedocs.io/en/master/index.html</a></li>
+</ul>
+<h3 id="Analysis-Modules"><a href="#Analysis-Modules" class="headerlink" title="Analysis Modules:"></a>Analysis Modules:</h3><ul>
+<li><a href="https://mythril-classic.readthedocs.io/en/master/module-list.html#delegate-call-to-untrusted-contract" target="_blank" rel="noopener">Delegate Call To Untrusted Contract</a> </li>
+</ul>
+<p>The <a href="https://github.com/ConsenSys/mythril/blob/develop/mythril/analysis/modules/delegatecall.py" target="_blank" rel="noopener">delegatecall module</a> detects <a href="https://smartcontractsecurity.github.io/SWC-registry/docs/SWC-112" target="_blank" rel="noopener">SWC-112 (DELEGATECALL to Untrusted Callee)</a>.</p>
+<ul>
+<li><a href="https://mythril-classic.readthedocs.io/en/master/module-list.html#dependence-on-predictable-variables" target="_blank" rel="noopener">Dependence on Predictable Variables</a></li>
+</ul>
+<p>The <a href="https://github.com/ConsenSys/mythril/blob/develop/mythril/analysis/modules/dependence_on_predictable_vars.py" target="_blank" rel="noopener">predictable variables module</a> detects <a href="https://smartcontractsecurity.github.io/SWC-registry/docs/SWC-120" target="_blank" rel="noopener">SWC-120 (Weak Randomness)</a> and <a href="https://smartcontractsecurity.github.io/SWC-registry/docs/SWC-116" target="_blank" rel="noopener">SWC-116 (Timestamp Dependence)</a>.</p>
+<ul>
+<li><a href="https://mythril-classic.readthedocs.io/en/master/module-list.html#deprecated-opcodes" target="_blank" rel="noopener">Deprecated Opcodes</a></li>
+</ul>
+<p>The <a href="https://github.com/ConsenSys/mythril/blob/develop/mythril/analysis/modules/deprecated_ops.py" target="_blank" rel="noopener">deprecated opcodes module</a> detects <a href="https://smartcontractsecurity.github.io/SWC-registry/docs/SWC-111" target="_blank" rel="noopener">SWC-111 (Use of Deprecated Functions)</a>.</p>
+<ul>
+<li><a href="https://mythril-classic.readthedocs.io/en/master/module-list.html#ether-thief" target="_blank" rel="noopener">Ether Thief</a></li>
+</ul>
+<p>The <a href="https://github.com/ConsenSys/mythril/blob/develop/mythril/analysis/modules/ether_thief.py" target="_blank" rel="noopener">Ether Thief module</a> detects <a href="https://smartcontractsecurity.github.io/SWC-registry/docs/SWC-105" target="_blank" rel="noopener">SWC-105 (Unprotected Ether Withdrawal)</a>.</p>
+<ul>
+<li><a href="https://mythril-classic.readthedocs.io/en/master/module-list.html#exceptions" target="_blank" rel="noopener">Exceptions</a></li>
+</ul>
+<p>The <a href="https://github.com/ConsenSys/mythril/blob/develop/mythril/analysis/modules/exceptions.py" target="_blank" rel="noopener">exceptions module</a> detects <a href="https://smartcontractsecurity.github.io/SWC-registry/docs/SWC-110" target="_blank" rel="noopener">SWC-110 (Assert Violation)</a>.</p>
+<ul>
+<li><a href="https://mythril-classic.readthedocs.io/en/master/module-list.html#external-calls" target="_blank" rel="noopener">External Calls</a></li>
+</ul>
+<p>The <a href="https://github.com/ConsenSys/mythril/blob/develop/mythril/analysis/modules/external_calls.py" target="_blank" rel="noopener">external calls module</a> warns about <a href="https://smartcontractsecurity.github.io/SWC-registry/docs/SWC-107" target="_blank" rel="noopener">SWC-117 (Reentrancy)</a> by detecting calls to external contracts.</p>
+<ul>
+<li><a href="https://mythril-classic.readthedocs.io/en/master/module-list.html#integer" target="_blank" rel="noopener">Integer</a></li>
+</ul>
+<p>The <a href="https://github.com/ConsenSys/mythril/blob/develop/mythril/analysis/modules/integer.py" target="_blank" rel="noopener">integer module</a> detects <a href="https://smartcontractsecurity.github.io/SWC-registry/docs/SWC-101" target="_blank" rel="noopener">SWC-101 (Integer Overflow and Underflow)</a>.</p>
+<ul>
+<li><a href="https://mythril-classic.readthedocs.io/en/master/module-list.html#multiple-sends" target="_blank" rel="noopener">Multiple Sends</a></li>
+</ul>
+<p>The <a href="https://github.com/ConsenSys/mythril/blob/develop/mythril/analysis/modules/multiple_sends.py" target="_blank" rel="noopener">multiple sends module</a> detects <a href="https://smartcontractsecurity.github.io/SWC-registry/docs/SWC-113" target="_blank" rel="noopener">SWC-113 (Denial of Service with Failed Call)</a> by checking for multiple calls or sends in a single transaction.</p>
+<ul>
+<li><a href="https://mythril-classic.readthedocs.io/en/master/module-list.html#suicide" target="_blank" rel="noopener">Suicide</a></li>
+</ul>
+<p>The <a href="https://github.com/ConsenSys/mythril/blob/develop/mythril/analysis/modules/suicide.py" target="_blank" rel="noopener">suicide module</a> detects <a href="https://smartcontractsecurity.github.io/SWC-registry/docs/SWC-106" target="_blank" rel="noopener">SWC-106 (Unprotected SELFDESTRUCT)</a>.</p>
+<ul>
+<li><a href="https://mythril-classic.readthedocs.io/en/master/module-list.html#state-change-external-calls" target="_blank" rel="noopener">State Change External Calls</a></li>
+</ul>
+<p>The <a href="https://github.com/ConsenSys/mythril/blob/develop/mythril/analysis/modules/state_change_external_calls.py" target="_blank" rel="noopener">state change external calls module</a> detects <a href="https://smartcontractsecurity.github.io/SWC-registry/docs/SWC-107" target="_blank" rel="noopener">SWC-107 (Reentrancy)</a> by detecting state change after calls to an external contract.</p>
+<ul>
+<li><a href="https://mythril-classic.readthedocs.io/en/master/module-list.html#unchecked-retval" target="_blank" rel="noopener">Unchecked Retval</a></li>
+</ul>
+<p>The <a href="https://github.com/ConsenSys/mythril/blob/develop/mythril/analysis/modules/unchecked_retval.py" target="_blank" rel="noopener">unchecked retval module</a> detects <a href="https://smartcontractsecurity.github.io/SWC-registry/docs/SWC-104" target="_blank" rel="noopener">SWC-104 (Unchecked Call Return Value)</a>.</p>
+<ul>
+<li><a href="https://mythril-classic.readthedocs.io/en/master/module-list.html#unchecked-retval" target="_blank" rel="noopener">User Supplied assertion</a></li>
+</ul>
+<p>The <a href="https://github.com/ConsenSys/mythril/blob/develop/mythril/analysis/modules/user_assertions.py" target="_blank" rel="noopener">user supplied assertion module</a> detects <a href="https://smartcontractsecurity.github.io/SWC-registry/docs/SWC-110" target="_blank" rel="noopener">SWC-110 (Assert Violation)</a> for user-supplied assertions. User supplied assertions should be log messages of the form: <code>emit AssertionFailed(string)</code>.</p>
+<ul>
+<li><a href="https://mythril-classic.readthedocs.io/en/master/module-list.html#arbitrary-storage-write" target="_blank" rel="noopener">Arbitrary Storage Write</a></li>
+</ul>
+<p>The <a href="https://github.com/ConsenSys/mythril/blob/develop/mythril/analysis/modules/arbitrary_write.py" target="_blank" rel="noopener">arbitrary storage write module</a> detects <a href="https://smartcontractsecurity.github.io/SWC-registry/docs/SWC-124" target="_blank" rel="noopener">SWC-124 (Write to Arbitrary Storage Location)</a>.</p>
+<ul>
+<li><p><a href="https://mythril-classic.readthedocs.io/en/master/module-list.html#arbitrary-jump" target="_blank" rel="noopener">Arbitrary Jump</a></p>
+<p>The <a href="https://github.com/ConsenSys/mythril/blob/develop/mythril/analysis/modules/arbitrary_jump.py" target="_blank" rel="noopener">arbitrary jump module</a> detects <a href="https://smartcontractsecurity.github.io/SWC-registry/docs/SWC-127" target="_blank" rel="noopener">SWC-127 (Arbitrary Jump with Function Type Variable)</a>.</p>
+</li>
+</ul>
+<h3 id="Analyzing-On-Chain-Contracts："><a href="#Analyzing-On-Chain-Contracts：" class="headerlink" title="Analyzing On-Chain Contracts："></a>Analyzing On-Chain Contracts：</h3><ul>
+<li><p>In order to authenticate with the MythX API, set the environment variables <code>MYTHX_PASSWORD</code> and <code>MYTHX_ETH_ADDRESS</code>.</p>
+</li>
+<li><p>Analyzing a mainnet contract via INFURA:</p>
+</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">myth pro -a 0x5c436ff914c458983414019195e0f4ecbef9e6dd</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Adding the <code>-l</code> flag will cause mythril to automatically retrieve dependencies, such as dynamically linked library contracts:</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">myth -v4 pro -l -a 0xEbFD99838cb0c132016B9E117563CB41f2B02264</span><br></pre></td></tr></table></figure>
+
+<h3 id="References"><a href="#References" class="headerlink" title="References:"></a>References:</h3><ol>
+<li><p><a href="https://mythril-classic.readthedocs.io/en/master/index.html" target="_blank" rel="noopener">https://mythril-classic.readthedocs.io/en/master/index.html</a></p>
+</li>
+<li><p><a href="https://github.com/ConsenSys/mythril" target="_blank" rel="noopener">https://github.com/ConsenSys/mythril</a></p>
+</li>
+<li><p><a href="https://swcregistry.io/" target="_blank" rel="noopener">https://swcregistry.io/</a></p>
+</li>
+<li><p><a href="https://pypi.org/project/mythril/" target="_blank" rel="noopener">https://pypi.org/project/mythril/</a></p>
+</li>
+</ol>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" target="_blank" rel="noopener" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" target="_blank" rel="noopener" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/03/25/Ethereum%20Mythril/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/25/Ethereum%20MythX/" class="archive-article-date">
-  	<time datetime="2020-03-25T11:42:39.734Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-25</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2020/03/25/Ethereum%20MythX/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Ethereum MythX</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/25/Ethereum%20MythX/">Ethereum MythX</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/07/Solidity%20contract-version-control%20demo/" class="archive-article-date">
-  	<time datetime="2020-03-07T11:34:32.977Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/07/Solidity%20contract-version-control%20demo/">Solidity contract-version-control demo</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/07/Aion%20VM%20Research/" class="archive-article-date">
-  	<time datetime="2020-03-07T11:34:14.455Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/07/Aion%20VM%20Research/">Aion VM Research</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/07/git%20use/" class="archive-article-date">
-  	<time datetime="2020-03-07T11:31:40.692Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/07/git%20use/">git use</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -323,8 +402,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
