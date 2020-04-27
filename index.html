@@ -56,7 +56,7 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/">相册</a></li>
+				<li><a href="/images">相册</a></li>
 	        
 				<li><a href="/about/me">关于我</a></li>
 	        
@@ -134,7 +134,7 @@
 				
 					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/">相册</a></li>
+					<li style="width: 33.333333333333336%"><a href="/images">相册</a></li>
 		        
 					<li style="width: 33.333333333333336%"><a href="/about/me">关于我</a></li>
 		        
@@ -152,6 +152,131 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-Release Java Lib To Maven" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/27/Release%20Java%20Lib%20To%20Maven/">Release Java Lib To Maven</a>
+    </h1>
+  
+
+        
+        <a href="/2020/04/27/Release%20Java%20Lib%20To%20Maven/" class="archive-article-date">
+  	<time datetime="2020-04-27T09:51:43.990Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-27</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Sign-Up-Sonatype-Account"><a href="#Sign-Up-Sonatype-Account" class="headerlink" title="Sign Up Sonatype Account"></a>Sign Up Sonatype Account</h2><ul>
+<li>sign up account at: <a href="https://issues.sonatype.org/secure/Signup!default.jspa" target="_blank" rel="noopener"><strong>https://issues.sonatype.org/secure/Signup!default.jspa</strong></a></li>
+</ul>
+<h2 id="Create-Ticket-To-Apply-One-New-Library"><a href="#Create-Ticket-To-Apply-One-New-Library" class="headerlink" title="Create Ticket To Apply One New Library"></a>Create Ticket To Apply One New Library</h2><ul>
+<li><p>create ticket at: <a href="https://issues.sonatype.org/secure/Dashboard.jspa" target="_blank" rel="noopener"><strong>https://issues.sonatype.org/secure/Dashboard.jspa</strong></a></p>
+</li>
+<li><p>waiting the ticket recieved</p>
+<p> <strong>note: maybe need to provide some proof</strong></p>
+</li>
+</ul>
+<p><img src="https://cdn.img.wenhairu.com/images/2020/04/27/YmBxh.png" alt=""></p>
+<h2 id="Generate-And-Upload-Gpg-Key"><a href="#Generate-And-Upload-Gpg-Key" class="headerlink" title="Generate And Upload Gpg Key"></a>Generate And Upload Gpg Key</h2><h3 id="Install-gpg-software"><a href="#Install-gpg-software" class="headerlink" title="Install gpg software"></a>Install gpg software</h3><ul>
+<li><p>if linux, run <code>apt-get install gnupg</code></p>
+</li>
+<li><p>If mac, run <code>brew install gpg</code></p>
+</li>
+</ul>
+<h3 id="Generate-gpg-key"><a href="#Generate-gpg-key" class="headerlink" title="Generate gpg key"></a>Generate gpg key</h3><ul>
+<li><p>run <code>gpg --full-generate-key</code> to generate gpg key</p>
+</li>
+<li><p>run <code>gpg --list-secret-keys --keyid-format LONG</code> to list keys</p>
+</li>
+</ul>
+<p><img src="https://cdn.img.wenhairu.com/images/2020/04/27/YmduP.png" alt=""></p>
+<pre><code>note: keyId of this demo is **A439DA7CD7088DE7**</code></pre><ul>
+<li>run <code>gpg --export-secret-keys keyId &gt; secret-keys.gpg</code> to export private key of keyId </li>
+</ul>
+<h3 id="Upload-gpg-key"><a href="#Upload-gpg-key" class="headerlink" title="Upload gpg key"></a>Upload gpg key</h3><ul>
+<li>run  <code>gpg --send-keys keyId  --keyserver hkp://keys.gnupg.net</code></li>
+</ul>
+<h2 id="Upload-Archives-To-Sonatype"><a href="#Upload-Archives-To-Sonatype" class="headerlink" title="Upload Archives To Sonatype"></a>Upload Archives To Sonatype</h2><ul>
+<li><p>Gradle Project refer: <a href="https://help.sonatype.com/repomanager2/maven-and-other-build-tools/gradle" target="_blank" rel="noopener"><strong>https://help.sonatype.com/repomanager2/maven-and-other-build-tools/gradle</strong></a></p>
+</li>
+<li><p>Maven Project refer:</p>
+<ul>
+<li><p><a href="https://help.sonatype.com/repomanager2/maven-and-other-build-tools/apache-maven" target="_blank" rel="noopener"><strong>https://help.sonatype.com/repomanager2/maven-and-other-build-tools/apache-maven</strong></a></p>
+</li>
+<li><p><a href="https://central.sonatype.org/pages/apache-maven.html" target="_blank" rel="noopener"><strong>https://central.sonatype.org/pages/apache-maven.html</strong></a></p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="Release-To-Maven"><a href="#Release-To-Maven" class="headerlink" title="Release To Maven"></a>Release To Maven</h2><h3 id="Manual-Release"><a href="#Manual-Release" class="headerlink" title="Manual Release"></a>Manual Release</h3><ul>
+<li><p>login  <a href="https://oss.sonatype.org/" target="_blank" rel="noopener">nexus pacakge manager</a>。</p>
+</li>
+<li><p>go <a href="https://oss.sonatype.org/#stagingRepositories" target="_blank" rel="noopener"><strong>https://oss.sonatype.org/#stagingRepositories</strong></a>  select the one you post</p>
+</li>
+<li><p>click close button and wait the release button light up</p>
+</li>
+<li><p>click release button</p>
+</li>
+</ul>
+<p><img src="https://cdn.img.wenhairu.com/images/2020/04/27/YmeVu.png" alt=""></p>
+<h3 id="Automated-Release"><a href="#Automated-Release" class="headerlink" title="Automated Release"></a>Automated Release</h3><ul>
+<li><p>you can refer</p>
+<ul>
+<li><p><a href="https://github.com/bmuschko/gradle-nexus-plugin" target="_blank" rel="noopener"><strong>https://github.com/bmuschko/gradle-nexus-plugin</strong></a></p>
+</li>
+<li><p><a href="https://stackoverflow.com/questions/20432907/automated-release-to-maven-central-with-gradle" target="_blank" rel="noopener"><strong>https://stackoverflow.com/questions/20432907/automated-release-to-maven-central-with-gradle</strong></a></p>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/04/27/Release%20Java%20Lib%20To%20Maven/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-Ethereum Mythril" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
